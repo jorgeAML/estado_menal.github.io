@@ -1,2 +1,2 @@
-# estado_mental.github.io
+# estado_mental
 estado mental JAVA pactices
