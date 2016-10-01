@@ -1,0 +1,42 @@
+.code_h1 {
+	font-family: 'Holtwood One SC', serif;
+	color: white;
+	text-align: center;
+}
+.suicidio_red {
+	height: 500px;
+	width: 600px;
+	background-color: 	#ff6f69;
+	border-radius: 5px;
+
+}
+.code_h2 {
+	font-family: 'Oswald', sans-serif;
+	padding-left: 2%;
+	color: 	#ae0001;
+}
+.suicidio_orange {
+	height: 20px;
+	width: 550px;
+	background-color: 	#ffcc5c;
+	border-radius: 5px;
+	margin-left: 15px;
+}
+.suicidio_light {
+	width: 550px;
+	background-color: 	#ffeead;
+	margin-left: 15px;
+	margin-top: 15px;
+	padding-right: -15px;
+	border-radius: 5px;
+	font-family: 'Oswald', sans-serif;
+
+}
+/*.suicidio_ligth  li {
+	font-family: 'Oswald', sans-serif;
+	
+}*/
+.suicidio {
+	margin-left: 10%;
+	margin-top: 5%;
+}
