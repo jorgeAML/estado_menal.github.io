@@ -4,7 +4,7 @@
 	text-align: center;
 }
 .suicidio_red {
-	height: 500px;
+	height: 420px;
 	width: 600px;
 	background-color: 	#ff6f69;
 	border-radius: 5px;
@@ -39,4 +39,13 @@
 .suicidio {
 	margin-left: 10%;
 	margin-top: 5%;
+}
+.icon-warmedalalt {
+	color: white;
+}
+.icon-emojidead {
+	margin-left: 2%;
+}
+.icon-check {
+	margin-left: 2%;
 }
