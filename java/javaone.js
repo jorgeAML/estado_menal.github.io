@@ -156,7 +156,7 @@ $(document).ready(function () {
 		html: "<a/>",
 	});
 	$(".noti3").find("a").eq(0).attr({
-		"href": "#",
+		"href": "posts/2018-1-28-ads_en_medicinaresources.html",
 		"title": "¿Ads en MedicinaResources? ¿Privatización o vigilancia?",
 		"class": "window-link-n3",
 	});
