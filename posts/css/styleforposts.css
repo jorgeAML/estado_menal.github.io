@@ -1,0 +1,195 @@
+/*grid-flex-box*/
+.row {
+	max-width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+.column {
+	flex: 1;
+}
+[class^="column"] {
+	padding: 0 0.5em;
+	/*background-color: #ffffff;*/
+}
+
+
+/*columns spans*/
+.column--2of5 { flex: 0 0 40%; }
+.column--1of2 { flex: 0 0 50%; }
+.column--3of5 { flex: 0 0 60%; }
+.column--2of3 { flex: 0 0 66.666%; }
+.column--3of4 { flex: 0 0 75%; }
+.column--4of5 { flex: 0 0 80%; }
+
+/* 100% width columns on small screens */
+@media (max-width: 600px) {
+	[class^="column"] {
+		flex: 0 0 100%;
+	}
+	.mobile-column--1of2 { flex: 0 0 50%; }
+	.mobile-column--2of3 { flex: 0 0 66.6666%; }
+	.mobile-column--1of3 { flex: 0 0 33.3333%; }
+	.mobile-column--1of4 { flex: 0 0 25%; }
+}
+/*css style posts*/
+body {
+	min-height: 100%;
+	background-color: #ebe9e9;
+	margin: 0;
+	font-size: 100%;
+}
+footer {
+	background: #201830;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	border-top: 2px solid #99aab5;
+	height: 100px;
+}
+footer p {
+	color: #F5F5DC;
+	text-align: left;
+	font-family: 'Libre Franklin', sans-serif;
+	margin-top: 3%; 
+	margin-left: 15%;
+}
+nav {
+	margin: 0;
+	padding: 0;
+	background: #201830;
+	overflow: hidden;
+	margin-top: 0px;
+	box-shadow: 0px 5px 5px -4px #2c2f33;
+	border-bottom: 2px solid #99aab5;
+	position: relative;
+}
+ ul {
+	list-style: none;
+	text-align: center;
+	overflow: hidden;
+}
+li {
+	display: inline-block;
+	margin: 0 -4px;
+	padding: 5px 0;
+}
+.onlynav li a {
+	padding: 5px 70px;
+	font-family: 'Libre Franklin', sans-serif;
+	color: #F5F5DC;
+	text-decoration: none;
+	/*text-transform: uppercase;
+	font-weight: bold;*/
+	display: block;
+	border-radius: 5px;
+}
+.onlynav li a:hover {
+	color: 	#fff;
+	/*background-color: 	#493267;*/
+	/*box-shadow: 0px 2px 25px -4px #e86af0;*/
+	border-bottom: 1px solid #99aab5;
+}
+.onlynav li a:active {
+	color: #fff;
+}
+ul li img {
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	background-size: 40px;
+	position: absolute;
+	margin-top: -25px;
+}
+
+.hojapost {
+	background-color: #ffffff;
+	margin-top: 3%;
+	margin-bottom: 4%;
+	margin-right: 10%;
+	margin-left: 10%;
+	border-radius: 2px;
+	border: 1px solid #dbdcff;
+	box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
+-webkit-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
+-moz-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
+}
+.circle-parrafo {
+	color: #0392cf;
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+	font-size: 0.9rem;
+	text-align: center;
+}
+.title-principal-x4 {
+	margin-left: 5%;
+	color: #0e1111;
+	font-family: 'Roboto Slab', serif;
+	font-size: 4em;
+	text-align: center;
+}
+.title-principal {
+	margin-left: 10%;
+	margin-right: 10%;
+	color: #0e1111;
+	font-family: 'Roboto Slab', serif;
+	font-size: 2.5em;
+	text-align: center;
+}
+.imgpost1 {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.parafo-prin {
+	margin-left: 10%;
+	margin-right: 10%;
+	color: #414a4c;
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+	line-height: 150%;
+	text-align: justify;
+}
+footer {
+	background: #201830;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	border-top: 2px solid #99aab5;
+	height: 100px;
+}
+footer p {
+	color: #F5F5DC;
+	text-align: left;
+	font-family: 'Libre Franklin', sans-serif;
+	margin-top: 3%; 
+	margin-left: 15%;
+}
+.linkpost1 a {
+	color: #5a2260;
+	text-decoration: none;
+	font-weight: bold;
+}
+.linkpost1 a:hover {
+	color: #fdb31d;
+}
+.circle-eira {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	color: #3b444b;
+	background-image: url(https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/IMG_5974.JPG);
+	background-size: 50px;
+	display: right;
+	border: 2px solid #dbdcff;
+	margin-left: 10%;
+	float: left;
+	position: relative;
+}
+.title-mrn {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	color: 	#afafaf;
+	margin-left: 16%;
+	margin-top: 3.7%;
+	font-size: 1.2em;
+}
