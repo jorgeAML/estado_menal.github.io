@@ -108,7 +108,7 @@ $(document).ready(function () {
 	});
 	$(".noti2").find("a").eq(0).attr({
 		title: "El porque necesitas concentrarte",
-		href: "href: "posts/2018-2-1-el_porque_necesitas_concentrarte.html",",
+		href: "posts/2018-2-1-el_porque_necesitas_concentrarte.html",
 		"class": "window-link-n2",
 	});
 	$("<img>", {
