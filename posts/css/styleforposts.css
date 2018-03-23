@@ -45,14 +45,15 @@ footer {
 	padding: 0;
 	position: relative;
 	border-top: 2px solid #99aab5;
-	height: 100px;
+	height: 50px;
 }
-footer p {
+footer span {
 	color: #F5F5DC;
 	text-align: left;
-	font-family: 'Libre Franklin', sans-serif;
-	margin-top: 3%; 
-	margin-left: 15%;
+	font-family: 'Pacifico', cursive;
+	margin-top: 5%; 
+	margin-left: 13%;
+	font-size: 1.2em;
 }
 nav {
 	margin: 0;
@@ -69,7 +70,7 @@ nav {
 	text-align: center;
 	overflow: hidden;
 }
-li {
+.onlynav li {
 	display: inline-block;
 	margin: 0 -4px;
 	padding: 5px 0;
@@ -150,21 +151,7 @@ ul li img {
 	line-height: 150%;
 	text-align: justify;
 }
-footer {
-	background: #201830;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	border-top: 2px solid #99aab5;
-	height: 100px;
-}
-footer p {
-	color: #F5F5DC;
-	text-align: left;
-	font-family: 'Libre Franklin', sans-serif;
-	margin-top: 3%; 
-	margin-left: 15%;
-}
+
 .linkpost1 a {
 	color: #5a2260;
 	text-decoration: none;
@@ -199,10 +186,89 @@ footer p {
 	float: left;
 	position: relative;
 }
+.circle-jorge {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	color: #3b444b;
+	background-image: url(https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/jorge.JPG);
+	background-size: 50px;
+	display: right;
+	border: 2px solid #dbdcff;
+	margin-left: 10%;
+	float: left;
+	position: relative;
+}
 .title-mrn {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: 	#afafaf;
 	margin-left: 16%;
 	margin-top: 3.7%;
 	font-size: 1.2em;
+}
+
+/*
+	For SVG circles
+*/
+.circle {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	border: 2px solid #f4f2da;
+	border-radius: 150px;
+	width: 150px;
+	height: 150px;
+	margin-left: 7.5%;
+}
+.p-circle {
+	position: relative;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 100px;
+	padding: 5px;
+	/*margin-top: -200px;*/
+	color: #9f977f;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	border: 2px solid #9f977f;
+}
+/*
+	HR
+*/
+.hr-divide {
+	margin-left: 10%;
+	margin-right: 10%;
+	border: 2px solid #ebe9e9;
+	border-bottom: 1px solid #dbdcff;
+}
+.country {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	margin-left: 10%;
+	border-radius: 5px;
+	/*border: 2px solid #f4f2da;
+	padding: 2px;*/
+}
+.routerline {
+	display: -webkit-inline-box;
+	text-align: center;
+	margin-left: 10%;
+
+}
+.flag {
+	width: 150px;
+	height: 100px;
+	border-radius: 5px;
+}
+.padfix {
+	padding: 2.5%;
+}
+.li-est {
+	margin-left: 10%;
+	margin-right: 10%;
+	color: #414a4c;
+	font-family: 'Kalam', cursive;
+	font-size: 1.2em;
+	display: block;
+	
 }
