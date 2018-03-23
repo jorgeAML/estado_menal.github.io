@@ -40,7 +40,7 @@ $(document).ready(function () {
 		html: "<a/>",
 	});
 	$(".notpri").find("a").eq(0).attr({
-		href: "#",
+		href: "posts/2018-2-21-estadisticas_2017.html",
 		title: "Estadísticas del primer año de MedicinaResources",
 		"class": "window-link-n1",
 	});
