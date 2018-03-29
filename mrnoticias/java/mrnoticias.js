@@ -76,7 +76,7 @@ $(document).ready(function() {
 		"class": "buttona1",
 	});
 	$(".a1").find("a").eq(0).attr({
-		href: "posts/2018-2-21-estadisticas_2017.html",
+		href: "https://jorgeaml.github.io/medicinaresourcesblog.github.io/posts/2018-2-21-estadisticas_2017.html",
 		title: "Estadísticas del primer año de MedicinaResources",
 	});
 
@@ -104,7 +104,7 @@ $(document).ready(function() {
 		"class": "buttona1",
 	});
 	$(".a2").find("a").eq(0).attr({
-		href: "posts/2018-2-1-el_porque_necesitas_concentrarte.html",
+		href: "https://jorgeaml.github.io/medicinaresourcesblog.github.io/posts/2018-2-1-el_porque_necesitas_concentrarte.html",
 		title: "El porque necesitas concentrarte.",
 	});
 
@@ -133,7 +133,7 @@ $(document).ready(function() {
 		"class": "buttona1",
 	});
 	$(".a3").find("a").eq(0).attr({
-		href: "posts/2018-1-28-ads_en_medicinaresources.html",
+		href: "https://jorgeaml.github.io/medicinaresourcesblog.github.io/posts/2018-1-28-ads_en_medicinaresources.html",
 		title: "Ads en MedicinaResources",
 	});
 
