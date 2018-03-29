@@ -18,7 +18,7 @@ $(document).ready(function () {
 		title: "ver repositorios en Github",
 	});
 	$(".onlynav").find("a").eq("2").html("MR noticias").attr({
-		href: "#",
+		href: "mrnoticias/mrnoticias.html",
 		title: "Noticias",
 	});
 	$(".onlynav").find("a").eq("3").html("Acerca de nosotros").attr({
