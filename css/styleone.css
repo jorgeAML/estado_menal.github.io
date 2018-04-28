@@ -1,9 +1,27 @@
-/*grid-flex-box*/
+/*
+The nav has some variations in the colors, now I use gradients. 
+New fonts in the nav and footer section, I use the same logic using cards to present
+ the feeds but with a new style and using "inline-flex" in the CSS codes. 
+ I hope you like it!
+
+grid-flex-box*/
 .row {
 	max-width: 1280px;
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
+}
+.row2 {
+	max-width: 1280px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto; 
+}
+@media only screen and (max-width: 768px) {
+	.row2 {
+		display: column;
+		flex-wrap: wrap;
+	}
 }
 .column {
 	flex: 1;
@@ -35,72 +53,131 @@
 
 /*css for medicinaresources blog*/
 body {
-	min-height: 100%;
 	background-color: #ebe9e9;
 	margin: 0;
-	font-size: 100%;
 }
+/*
+FOOTER BEGIN
+*/
 footer {
-	background: #201830;
+	/*background: #201830;*/
+	background-image: -webkit-linear-gradient(to right, #fbcf9c, #201830);
+	background-image: 	-moz-linear-gradient(to right, #fbcf9c, #201830);
+	background-image: 		-o-linear-gradient(to right, #fbcf9c, #201830);
+	background-image: 			linear-gradient(to right, #fbcf9c, #201830);
 	margin: 0;
 	padding: 0;
 	position: relative;
-	border-top: 2px solid #99aab5;
-	height: 100px;
+	border-top: 1.5px solid #f7f7f7;
 }
-footer p {
+.foot-div {
 	color: #F5F5DC;
-	text-align: left;
-	font-family: 'Libre Franklin', sans-serif;
-	margin-top: 3%; 
-	margin-left: 15%;
-}
-.header img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-nav {
-	margin: 0;
-	padding: 0;
-	background: #201830;
-	overflow: hidden;
-	margin-top: -55px;
-	box-shadow: 0px 5px 5px -4px #2c2f33;
-	border-bottom: 2px solid #99aab5;
-	position: relative;
-}
- ul {
-	list-style: none;
 	text-align: center;
-	overflow: hidden;
+	font-family: 'Bungee', cursive;
+	font-size: 0.9em;
+	display: flex;
+	justify-content: space-around;
+	align-content: stretch;
 }
-li {
-	display: inline-block;
-	margin: 0 -4px;
-	padding: 5px 0;
+@media only screen and (max-width: 768px) {
+	.foot-div {
+		display: column;
+		flex-wrap: wrap;
+		font-size: 0.9rem;
+	}
 }
-.onlynav li a {
-	padding: 5px 70px;
-	font-family: 'Libre Franklin', sans-serif;
+.foot-div div:hover {
+	border-bottom: 2px solid #fbcf9c;
+	-webkit-box-shadow: 0px 62px 114px -46px rgba(158,55,159);
+		-moz-box-shadow: 0px 62px 114px -46px rgba(158,55,159);
+			box-shadow: 0px 62px 114px -46px rgba(158,55,159);
+}
+/*
+FOOTER RESPONSIVE
+*/
+
+nav img {
+	width: 100%;
+	object-fit: cover;
+	order: 1;
+}
+/*
+NAVBAR RESPONSIVE -- BEGIN
+*/
+
+.navbar {
+	order: 2;
+	display: flex;
+	background-image: -webkit-linear-gradient(to left, #fbcf9c, #201830);
+	background-image: 	-moz-linear-gradient(to left, #fbcf9c, #201830);
+	background-image: 		-o-linear-gradient(to left, #fbcf9c, #201830);
+	background-image: 			linear-gradient(to left, #fbcf9c, #201830);
+	padding: 16px;
+	font-family: 'Bungee', cursive;
 	color: #F5F5DC;
+	border-bottom: 2px solid #f7f7f7;
+	box-shadow: 0px 1px 1px 1px #999999;
+	text-align: center;
+}
+.navbar_items {
+	display: flex;
+}
+.navbar a {
 	text-decoration: none;
-	/*text-transform: uppercase;
-	font-weight: bold;*/
-	display: block;
-	border-radius: 5px;
+	color: white;
 }
-.onlynav li a:hover {
-	color: 	#fff;
-	background-color: #373854;
-	box-shadow: 0px 5px 10px -4px #493267;
-	border-bottom: 1px solid #493267;
+.navbar a:hover {
+	border-top: 2px solid #fbcf9c;
 }
-.onlynav li a:active {
-	color: #fff;
+.navbar a:active {
+	transform: scale(0.9);
 }
+/*
+MEDIA QUERY 
+*/
+@media only screen and (min-width: 768px) {
+	.navbar_link-toogle {
+		display: none;
+	}
+	.navbar_link {
+	padding-right: 50px;
+	padding-left: 50px;
+	}
+	.navbar {
+		margin-top: -24px;
+		justify-content: center;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.navbar, 
+	.navbar_items {
+		flex-direction: column;
+		font-size: 0.9em;
+	}
+	.navbar_items {
+		display: none;
+	}
+	.navbar_ToggleShow {
+		display: flex;
+	}
+	.navbar_link-toogle {
+		align-self: flex-end;
+		display: initial;
+		position: absolute;
+		cursor: pointer;
+	}
+	.navbar_link {
+	padding-right: 8px;
+	}
+	.navbar {
+		margin-top: -25px;
+	}
+}
+
+/*
+NAVBAR RESPONSIVE -- END
+*/
 .noticias1 {
-	background-color: #ebe9e9;
 	height: 500px;
 	padding: 20px;
 	margin: 0;
@@ -109,11 +186,8 @@ li {
 /*Noticia principal 1*/
 .notpri {
 	background-color: #ffffff;
-	height: 90%;
-	/*width: 100%;*/
+	/*height: 90%;*/
 	margin-top: 3%;
-	margin-right: 10%;
-	margin-left: 10%;
 	border-radius: 15px;
 	border: 1px solid #dbdcff;
 	box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
@@ -121,44 +195,82 @@ li {
 -moz-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 }
 .notpri:hover {
-	opacity: 0.8;
+	/*opacity: 0.8;*/
+	box-shadow: 0px 2px 2px 1px #b2abb5;
+	transition: all ease-in-out 0.8s;
 }
 .notpri a {
 	text-decoration: none;
 }
 .np1 img {
 	width: 100%;
-	height: 98%;
-	position: relative;
+	height: 100%;
 	top: 0;
 	left: 0;
-	border-radius: 15px;
-	object-fit: cover;
+	border-right: 1px dashed #afafaf;
 }
 .title-mrn {
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	color: 	#afafaf;
-	margin-left: 10%;
+	margin-left: 5%;
 }
 .title-principal {
-	margin-left: 10%;
-	color: #0e1111;
+	margin-left: 5%;
+	color: #4f5b66;
 	font-family: 'Roboto Slab', serif;
 	font-size: 2em;
 }
 .title-principal-50 {
-	margin-left: 10%;
-	color: #0e1111;
+	margin-left: 5%;
+	color: #4f5b66;
 	font-family: 'Roboto Slab', serif;
 	font-size: 1.5em;
 }
 .parafo-prin {
 	margin-left: 10%;
-	margin-right: 5%;
-	color: #414a4c;
+	margin-right: 10%;
+	color: #4f5b66;
 	font-family: 'Kalam', cursive;
 	font-size: 1.2em;
 	line-height: 150%;
+}
+/*
+ALL RESPONSIVE WEB FOR POSTS 
+MAYBE #1
+*/
+@media only screen and (min-width: 769px) {
+	.notpri {
+		margin-right: 10%;
+		margin-left: 10%;
+	}
+	.np1 img {
+		border-radius: 15px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.parrafo-prin {
+
+	}
+	.notpri {
+		justify-content: center;
+		width: 100%;
+	}
+	.title-principal {
+		font-size: 1.8em;
+	}
+	.np1 img {
+		width: 150%;
+		height: 90%;
+		border-right: none;
+		border-top-right-radius: 15px;
+		border-top-left-radius: 15px;
+		border-bottom: 1px dashed #afafaf;
+	}
+	.circle-parrafo {
+		margin-left: 26%;
+		margin-top: -45px;
+		
+	}
 }
 
 /*circle*/
@@ -169,18 +281,16 @@ li {
 	color: #3b444b;
 	background-image: url(https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/jorge.JPG);
 	background-size: 50px;
-	display: right;
 	border: 2px solid #dbdcff;
-	margin-left: 10%;
+	margin-left: 5%;
 	float: left;
 }
 .circle-parrafo {
-	color: #0392cf;
-	font-family: 'Playfair Display', serif;
-	font-weight: bold;
-	font-size: 0.8rem;
+	color: #a92a56;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.2rem;
 	float: right;
-	margin-right: 5%;
+	margin-right: 10%;
 }
 
 
@@ -188,16 +298,13 @@ li {
 /*Noticias 2*/
 .noticias2 {
 	background-color: #ebe9e9;
-	height: 700px;
 	padding: 20px;
 	margin: 0;
+	
 }
 .noti2 {
 	background-color: #ffffff;
-	/*width: 100%;*/
 	height: 700px;
-	margin-left: 20%;/*invertido*/
-	margin-right: 5%;
 	border-radius: 15px;
 	border: 1px solid #dbdcff;
 	box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
@@ -205,14 +312,13 @@ li {
 -moz-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 }
 .noti2:hover {
-	opacity: 0.8;
+	box-shadow: 0px 2px 2px 1px #b2abb5;
+	transition: all ease-in-out 0.8s;
 }
 .noti3 {
 	background-color: #ffffff;
 	/*width: 100%;*/
 	height: 700px;
-	margin-right: 20%;
-	margin-left: 5%;/*invertido*/
 	border-radius: 15px;
 	border: 1px solid #dbdcff;
 	box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
@@ -220,11 +326,48 @@ li {
 -moz-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 }
 .noti3:hover {
-	opacity: 0.8;
+	box-shadow: 0px 2px 2px 1px #b2abb5;
+	transition: all ease-in-out 0.8s;
+}
+@media only screen and (min-width: 768px) {
+	.noti2 {
+		margin-left: 20%;/*invertido*/
+		margin-right: 5%;
+	}
+	.noti3 {
+		margin-right: 20%;
+		margin-left: 5%;/*invertido*/
+	}
+	.window-link-n2 img {
+		height: 40%;
+	}
+	.window-link-n3 img {
+		height: 40%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.noti2 {
+		margin-top: 55%;
+		height: all;
+	}
+	.noti3 {
+		margin-top: 5%;
+		height: 105%;
+		margin-bottom: 5%;
+	}
+	.window-link-n2 img {
+		height: 20%;
+	}
+	.window-link-n3 img {
+		height: 20%;
+	}
+	footer {
+		margin-top: 15%;
+	}
 }
 .window-link-n2 img {
 	width: 100%;
-	height: 40%;
+	border-bottom: 1px dashed #afafaf;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -234,7 +377,7 @@ li {
 }
 .window-link-n3 img {
 	width: 100%;
-	height: 40%;
+	border-bottom: 1px dashed #afafaf;
 	position: relative;
 	top: 0;
 	left: 0;
@@ -259,7 +402,7 @@ li {
 	background-size: 50px;
 	display: right;
 	border: 2px solid #dbdcff;
-	margin-left: 10%;
+	margin-left: 5%;
 	float: left;
 }
 .circle-eira {
@@ -269,16 +412,20 @@ li {
 	color: #3b444b;
 	background-image: url(https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/IMG_5974.JPG);
 	background-size: 50px;
-	display: right;
 	border: 2px solid #dbdcff;
-	margin-left: 10%;
+	margin-left: 5%;
 	float: left;
+	margin-top: -20px;
+
 }
 .circle-parrafo-closer {
-	color: #0392cf;
-	font-family: 'Playfair Display', serif;
-	font-weight: bold;
-	font-size: 0.8rem;
-	float: right;
-	margin-right: 32%;
+	color: #a92a56;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 1.2rem;
+	float: left;
+	margin-left: 1%;
+	text-align: justify;
+}
+.up20 {
+	margin-top: -5px;
 }
