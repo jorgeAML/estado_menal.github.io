@@ -1,4 +1,11 @@
-/*grid-flex-box*/
+/*
+The nav has some variations in the colors, now I use gradients. 
+New fonts in the nav and footer section, I use the same logic using cards to present
+ the feeds but with a new style and using "inline-flex" in the CSS codes. 
+ I hope you like it!
+
+ 
+grid-flex-box*/
 .row {
 	max-width: 1280px;
 	display: flex;
@@ -33,110 +40,121 @@
 	.mobile-column--1of4 { flex: 0 0 25%; }
 }
 body {
-	min-height: 100%;
+	/*min-height: 100%;*/
 	background-color: #ebe9e9;
 	margin: 0;
-	font-size: 100%;
+	/*font-size: 100%;*/
 }
 footer {
 	/*background: #201830;*/
-	background-image: -webkit-linear-gradient(to right, #9e379f, #201830);
-	background-image: 	-moz-linear-gradient(to right, #9e379f, #201830);
-	background-image: 		-o-linear-gradient(to right, #9e379f, #201830);
-	background-image: 			linear-gradient(to right, #9e379f, #201830);
+	background-image: -webkit-linear-gradient(to right, #fbcf9c, #201830);
+	background-image: 	-moz-linear-gradient(to right, #fbcf9c, #201830);
+	background-image: 		-o-linear-gradient(to right, #fbcf9c, #201830);
+	background-image: 			linear-gradient(to right, #fbcf9c, #201830);
 	margin: 0;
 	padding: 0;
 	position: relative;
-	height: 50px;
+	border-top: 1.5px solid #f7f7f7;
 }
-footer span {
+.foot-div {
 	color: #F5F5DC;
 	text-align: center;
 	font-family: 'Bungee', cursive;
-	margin-top: 10%;
-	margin-left: 12.33%; 
 	font-size: 0.9em;
+	display: flex;
+	justify-content: space-around;
+	align-content: stretch;
 }
-footer span:hover {
-	border-bottom: 2px solid #9e379f;
+@media only screen and (max-width: 768px) {
+	.foot-div {
+		display: column;
+		flex-wrap: wrap;
+		font-size: 0.9rem;
+	}
+}
+.foot-div div:hover {
+	border-top: 2px solid #fbcf9c;
 	-webkit-box-shadow: 0px 62px 114px -46px rgba(158,55,159);
 		-moz-box-shadow: 0px 62px 114px -46px rgba(158,55,159);
 			box-shadow: 0px 62px 114px -46px rgba(158,55,159);
 }
-.navtitle {
+
+/*
+NAVBAR RESPONSIVE -- BEGIN
+*/
+
+.navbar {
+	display: flex;
+	background-image: -webkit-linear-gradient(to left, #fbcf9c, #201830);
+	background-image: 	-moz-linear-gradient(to left, #fbcf9c, #201830);
+	background-image: 		-o-linear-gradient(to left, #fbcf9c, #201830);
+	background-image: 			linear-gradient(to left, #fbcf9c, #201830);
+	padding: 16px;
 	font-family: 'Bungee', cursive;
-	margin-left: 0;
-	float: left;
-	padding-right: 0;
-	padding-left: 0;
-	font-size: 1.1em;
-}
-nav {
-	margin: 0;
-	padding: 0;
-	/*background: #201830;*/
-	background-image: -webkit-linear-gradient(to left, #9e379f, #201830);
-	background-image: 	-moz-linear-gradient(to left, #9e379f, #201830);
-	background-image: 		-o-linear-gradient(to left, #9e379f, #201830);
-	background-image: 			linear-gradient(to left, #9e379f, #201830);
-	overflow: hidden;
-	margin-top: 0px;
-	box-shadow: -1px 5px 5px -4px #2c2f33;
-	height: 61px;
-	position: relative;
-}
- ul {
-	list-style: none;
-	text-align: center;
-	overflow: hidden;
-}
-.onlynav li {
-	display: inline-block;
-}
-.onlynav li a {
-	padding-left: 40px;
-	padding-right: 40px;
 	color: #F5F5DC;
+	border-bottom: 2px solid #f7f7f7;
+	box-shadow: 0px 1px 1px 1px #999999;
+	text-align: center;
+}
+.navbar_items {
+	display: flex;
+}
+.navbar a {
 	text-decoration: none;
-	display: block;
+	color: white;
 }
-.nava1 {
-	font-family: 'Bungee', cursive;
-	margin-left: 5px;
-	margin-right: 5px; 
-	float: right;
+.navbar a:hover {
+	border-top: 2px solid #fbcf9c;
 }
-.onlynav li a:hover {
-	/*background-color: 	#493267;
-	/*-webkit-box-shadow: inset -15px -15px 125px -35px rgba(32,24,48,1);
-		-moz-box-shadow: inset -15px -15px 125px -35px rgba(32,24,48,1);
-			box-shadow: inset -15px -15px 125px -35px rgba(32,24,48,1);
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;*/
-	border-top: 2px solid #9e379f;
-}
-.onlynav li a:active {
+.navbar a:active {
 	transform: scale(0.9);
 }
-.onlynav li a:active {
-	color: #fff;
+/*
+MEDIA QUERY 
+*/
+@media only screen and (min-width: 768px) {
+	.navbar_link-toogle {
+		display: none;
+	}
+	.navbar_link {
+	padding-right: 50px;
+	padding-left: 50px;
+	}
 }
-ul li img {
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	background-size: 40px;
-	position: absolute;
-	margin-top: -45px;
-	margin-left: -55px;
+@media only screen and (max-width: 768px) {
+	.navbar, 
+	.navbar_items {
+		flex-direction: column;
+		font-size: 0.9em;
+	}
+	.navbar_items {
+		display: none;
+	}
+	.navbar_ToggleShow {
+		display: flex;
+	}
+	.navbar_link-toogle {
+		align-self: flex-end;
+		display: initial;
+		position: absolute;
+		cursor: pointer;
+	}
+	.navbar_link {
+	padding-right: 8px;
+	}
 }
+
+/*
+NAVBAR RESPONSIVE -- END
+*/
+
 .hojapost {
 	background-color: #ffffff;
 	margin-top: 3%;
 	margin-bottom: 4%;
 	margin-right: 2%;
 	margin-left: 2%;
-	border-radius: 2px;
+	border-radius: 15px;
 	border: 1px solid #dbdcff;
 	box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 -webkit-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
@@ -145,16 +163,14 @@ ul li img {
 .inlinediv {
 	
 	display: inline-flex;
+	flex-direction: row;
+	align-content: center;
 }
 .post-left {
 	background: #ebe9e9;
-	height: 600px;
-	/*padding: 1%;*/
-	width: 27.78%;
-	margin: 0;
-	margin-left: 3.7%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin: 1% 1%;
+	margin-top: 1%;
+	margin-bottom: 1%;
 	border-radius: 15px;
 	border: 2px solid #afafaf;
 	background-image: -webkit-linear-gradient(to right, #ebe9e9, #f2f2f2);
@@ -168,6 +184,42 @@ box-shadow:         2px 2px 16px 0px rgba(175, 175, 175, 0.42);
 .post-left:hover {
 	/*opacity: 0.8;*/
 }
+
+/*
+
+POSTs
+
+*/
+@media only screen and (min-width: 768px) {
+	.a1 {
+		order: 1;
+		flex: 2 2 10%;
+	}
+	.a2 {
+		order: 2;
+		flex: 2 2 10%;
+	}
+	.a3 {
+		order: 3;
+		flex: 2 2 10%;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.inlinediv {
+		flex-direction: column;
+		width: 100%;
+	}
+	.post-left {
+		margin: 2% 2%;
+	}
+	.hojapost {
+		margin-right: 6%;
+	}
+	.buttona1 {
+		margin-bottom: 5%;
+	}
+}
+
 .imga1 {
 	width: 100%;
 	height: 40%;
@@ -199,30 +251,43 @@ box-shadow:         2px 2px 16px 0px rgba(175, 175, 175, 0.42);
 	padding-right: 7%;
 	font-size: 1.4em;
 }
+	/*
+	STYLE 1
+	*/
 .buttona1 {
-	text-align: center;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	font-size: 1.4em;
-	color: 	#b62020;
-	background-color: #e59393;
+	/*color: 	#b62020;*/
+	color: #4f5b66;
+	/*background-color: #e59393;*/
+	background-color: #ebe9e9;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
-	position: relative;
-	box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+	/*box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);*/
+	box-shadow: 0 1px 15px #808080;
 	padding: 3%;
 	margin-left: 35.3%;
 }
+@media only screen and (min-width: 768px) {
+	button {
+		align-items: flex-end;
+	}
+}
 .buttona1:hover {
-	background-image: -webkit-linear-gradient(to right, #fc3468, #ff6289);
-	background-image: 	-moz-linear-gradient(to right, #fc3468, #ff6289);
-	background-image: 		-o-linear-gradient(to right, #fc3468, #ff6289);
-	background-image: 			linear-gradient(to right, #fc3468, #ff6289);
-	color: 	#ffc2cd;
-	box-shadow: 0 2px 25px rgba(255,0,101, 0.5);
+	
+	background-image: -webkit-linear-gradient(to left, #666666, #afafaf);
+	background-image: 	-moz-linear-gradient(to left, #666666, #afafaf);
+	background-image: 		-o-linear-gradient(to left, #666666, #afafaf);
+	background-image: 			linear-gradient(to left, #666666, #afafaf);
+	color: 	#e6e6fa;
+	box-shadow: 0 2px 25px #afafaf;
+	/*border: 1.5px solid #e6e6fa;*/
 	transition: all ease-in-out 0.5s;
 }
 .buttona1:active {
-	transform: scale(0.9);
 	background-color: darken(#ff6289, 5%);
 }
+/*
+STYLE ONE END
+*/
