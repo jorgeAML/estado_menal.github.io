@@ -1,38 +1,41 @@
 $(document).ready(function() {
 
-	$("<ul/>", {
-		"appendTo": "nav",
-		"class": "onlynav",
-		html: "<li><a/></li></li><li><a/></li><li><a/></li><li><a/></li><li><a/></li>",
+	$("<div/>", {
+		"appendTo": ".position-navbar",
+		"class": "navbar",
+		"html": "<div/><div/><nav><div/><div/><div/></nav>",
 	});
-	$(".onlynav").find("img").eq(0).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/logonav.jpg",
-		"class": "imgnav",
+	$(".navbar").find("nav").eq(0).attr({
+		"class": "navbar_items",
 	});
-	$(".onlynav").find("a").eq(0).html("MedicinaResources").attr({
-		href: "https://jorgeaml.github.io/medicinaresourcesblog.github.io/",
-		title: "MedicinaResources",
-		"class": "navtitle",
+	$(".navbar").find("div").eq(1).html("<i class='material-icons'>&#xE5D2;</i>").attr({
+		"class": "navbar_link navbar_link-toogle",
 	});
-	/*$(".onlynav").find("a").eq(1).html("Página principal").attr({
-		href: "http://www.medicinaresources.com/",
-		title: "volver a medicinaresources",
-	});*/
-	$(".onlynav").find("a").eq(2).html("Github").attr({
-		href: "https://github.com/jorgeAML",
-		title: "ver repositorios en Github",
-		"class": "nava1",
+	$(".navbar").find("div").eq(0).html("<a href='https://jorgeaml.github.io/medicinaresourcesblog.github.io/'>MedicinaResources - blog</a>").attr({
+		"class": "navbar_link navbar_link-brand",
 	});
-	$(".onlynav").find("a").eq(3).html("MR noticias").attr({
-		href: "#",
-		title: "Noticias",
-		"class": "nava1",
+	$(".navbar").find("div").eq(2).html("<a href='https://github.com/jorgeAML'>Github</a>").attr({
+		"class": "navbar_link",
 	});
-	$(".onlynav").find("a").eq(4).html("Acerca de nosotros").attr({
-		href: "#",
-		title: "conoce un poco más de MedicinaResources",
-		"class": "nava1",
+	$(".navbar").find("div").eq(3).html("<a href='#'>MR noticias</a>").attr({
+		"class": "navbar_link",
 	});
+	$(".navbar").find("div").eq(4).html("<a href='#'>Acerca de nosotros</a>").attr({
+		"class": "navbar_link",
+	});
+
+	/*
+	FUCTION RESPONSIVE NAV 
+	*/
+
+	$(".navbar_link-toogle").click(function(){
+		$(".navbar_items").slideToggle( 800 );
+	})
+	$(".navbar_items").click(function() {
+		console.log('show this shit');
+	});
+
+	
 
 	//POST
 
@@ -126,7 +129,7 @@ $(document).ready(function() {
 	$(".a3").find("h2").eq(0).html("¿Ads en MedicinaResources?").attr({
 		"class": "h2a1",
 	});
-	$(".a3").find("p").eq(0).html("He aquí algunos consejos para mandar al carajo los anuncios de Google de ¡una vez por todas! y el pequeño experimento en nuestro sitio.").attr({
+	$(".a3").find("p").eq(0).html("He aquí algunos consejos para mandar al carajo los anuncios de Google de ¡una vez por todas! y el pequeño experimento en MedicinaResources.").attr({
 		"class": "pa1",
 	});
 	$(".a3").find("button").html("Leer noticia").eq(0).attr({
@@ -139,16 +142,12 @@ $(document).ready(function() {
 
 
 	//footer
-	$("<span/>", {
+	$("<div/>", {
 		"appendTo": "footer",
-		html: "MedicinaResources &copy 2018",
+		"class": "foot-div",
+		html: "<div/><div/><div/>", 
 	});
-	$("<span/>", {
-		"appendTo": "footer",
-		html: "Santiago - Guatemala",
-	});
-	$("<span/>", {
-		"appendTo": "footer",
-		html: "Sant - Petersburgo - Russia",
-	});
+	$(".foot-div").find("div").eq(0).html("MedicinaResources &copy 2018");
+	$(".foot-div").find("div").eq(1).html("Santiago - Guatemala");
+	$(".foot-div").find("div").eq(2).html("Sant Petersburgo - Rusia");
 });
