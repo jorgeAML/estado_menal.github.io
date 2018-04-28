@@ -21,7 +21,7 @@ $(document).ready(function () {
 	$(".navbar").find("div").eq(2).html("<a href='https://github.com/jorgeAML'>Github</a>").attr({
 		"class": "navbar_link",
 	});
-	$(".navbar").find("div").eq(3).html("<a href='#'>MR noticias</a>").attr({
+	$(".navbar").find("div").eq(3).html("<a href='mrnoticias/mrnoticias.html'>MR noticias</a>").attr({
 		"class": "navbar_link",
 	});
 	$(".navbar").find("div").eq(4).html("<a href='#'>Acerca de nosotros</a>").attr({
