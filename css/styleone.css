@@ -190,15 +190,14 @@ NAVBAR RESPONSIVE -- END
 	margin-top: 3%;
 	border-radius: 15px;
 	border: 1px solid #dbdcff;
-	box-shadow: 0px 0.2px 0.2px 0.2px #b2abb5;
+	box-shadow: 0px 1.2px 3.2px 0.2px #b2abb5;
+	transition: .3s;
 }
 .notpri:hover {
-	/*opacity: 0.8;*/
-	
 	box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 		-webkit-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 			-moz-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
-	transition: all ease-in-out 0.8s;
+	transform: scale(1.05,1.05);
 }
 .notpri a {
 	text-decoration: none;
@@ -305,13 +304,14 @@ MAYBE #1
 	height: 700px;
 	border-radius: 15px;
 	border: 1px solid #dbdcff;
-	box-shadow: 0px 0.2px 0.2px 0.2px #b2abb5;
+	box-shadow: 0px 1.2px 3.2px 0.2px #b2abb5;
+	transition: .3s;
 }
 .noti2:hover {
 	box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 		-webkit-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 			-moz-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
-	transition: all ease-in-out 0.8s;
+	transform: scale(1.05,1.05);
 }
 .noti3 {
 	background-color: #ffffff;
@@ -319,13 +319,14 @@ MAYBE #1
 	height: 700px;
 	border-radius: 15px;
 	border: 1px solid #dbdcff;
-	box-shadow: 0px 0.2px 0.2px 0.2px #b2abb5;
+	box-shadow: 0px 1.2px 3.2px 0.2px #b2abb5;
+	transition: .3s;
 }
 .noti3:hover {
 	box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 		-webkit-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 			-moz-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
-	transition: all ease-in-out 0.8s;
+	transform: scale(1.05,1.05);
 }
 @media only screen and (min-width: 768px) {
 	.noti2 {
