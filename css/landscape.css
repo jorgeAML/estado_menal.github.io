@@ -1,0 +1,41 @@
+/*ORIENTETION: LANDSCAPE*/
+@media (min-width: 375px) and (max-width: 667px) {
+    .np1 img {
+        height: 100%;
+    }
+    .circle-parrafo {
+        margin-top: 25px;
+        float: left;
+        margin-left: 3px;
+    }
+    .noti2 {
+        margin-top: 300px;
+    }
+    .noti3 {
+        margin-top: 300px;
+        height: 80%;
+    }
+    .window-link-n2 img {
+		height: 20%;
+	}
+	.window-link-n3 img {
+		height: 20%;
+	}
+}
+/*IPHONE 5 */
+@media (min-width: 320px) and (max-width: 568px) {
+    .noti2 {
+        margin-top: 210px;
+        height: 70%;
+    }
+    .noti3 {
+        margin-top: -15px;
+        height: 115%;
+    }
+    .window-link-n2 img {
+		height: 40%;
+	}
+	.window-link-n3 img {
+		height: 40%;
+	}
+}
