@@ -39,3 +39,17 @@
 		height: 40%;
 	}
 }
+/*IPHONE 4 */
+@media (min-width: 320px) and (max-width: 480px) {
+    .noti2 {
+        margin-top: 180px;
+        height: 75%;
+    }
+    .noti3 {
+        margin-top: 20px;
+        height: 121%;
+    }
+    footer {
+        margin-top: 155px;
+    }
+}
