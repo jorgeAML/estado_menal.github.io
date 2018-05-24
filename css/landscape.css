@@ -1,0 +1,66 @@
+/*ORIENTETION: LANDSCAPE*/
+@media (min-width: 375px) and (max-width: 667px) {
+    .np1 img {
+        height: 100%;
+    }
+    .circle-parrafo {
+        margin-top: 25px;
+        float: left;
+        margin-left: 3px;
+    }
+    .noti2 {
+        margin-top: 300px;
+    }
+    .noti3 {
+        margin-top: 300px;
+        height: 80%;
+    }
+    .window-link-n2 img {
+		height: 20%;
+	}
+	.window-link-n3 img {
+		height: 20%;
+	}
+}
+/*IPHONE 5 */
+@media (min-width: 320px) and (max-width: 568px) {
+    .noti2 {
+        margin-top: 210px;
+        height: 70%;
+    }
+    .noti3 {
+        margin-top: -15px;
+        height: 115%;
+    }
+    .window-link-n2 img {
+		height: 40%;
+	}
+	.window-link-n3 img {
+		height: 40%;
+	}
+}
+/*IPHONE 4 */
+@media (min-width: 320px) and (max-width: 480px) {
+    .noti2 {
+        margin-top: 180px;
+        height: 75%;
+    }
+    .noti3 {
+        margin-top: 20px;
+        height: 121%;
+    }
+    footer {
+        margin-top: 155px;
+    }
+}
+/*ZPERIA */
+@media (min-width: 360px) and (max-width: 598px) {
+    .noti2 {
+        height: 50%;
+        margin-top: 260px;
+    }
+    .noti3 {
+        height: 130%;
+        margin-top: -190px;
+    }
+}
