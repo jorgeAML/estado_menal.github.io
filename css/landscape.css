@@ -53,3 +53,14 @@
         margin-top: 155px;
     }
 }
+/*ZPERIA */
+@media (min-width: 360px) and (max-width: 598px) {
+    .noti2 {
+        height: 50%;
+        margin-top: 260px;
+    }
+    .noti3 {
+        height: 130%;
+        margin-top: -190px;
+    }
+}
