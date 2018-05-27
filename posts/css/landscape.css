@@ -1,0 +1,66 @@
+/*Orientation*/
+/*landscape*/
+/*iphone 6*/
+@media (min-width: 375px) and (max-width: 667px) {
+    .hojapost {
+        margin-right: 0%;
+        
+    }
+    .title-principal-x4 {
+        font-size: 1.5em;
+    }
+    .title-principal {
+        font-size: 1.5em;
+    }
+    .parafo-prin {
+        font-size: 1.0em;
+    }
+    .circle-eira {
+        height: 30px;
+        width: 30px;
+    }
+    .title-mrn {
+        font-size: 0.9em;
+    }
+    .circle-devorah {
+        height: 30px;
+        width: 30px;
+    }
+}
+/*iphone 5 */
+@media (min-width: 320px) and (max-width: 568px) {
+    .hojapost {
+        margin-right: 2.5%;
+    }
+    .title-principal-x4 {
+        font-size: 1.4em;
+    }
+    .title-principal {
+        font-size: 1.3em;
+    }
+    .parafo-prin {
+        font-size: 1.0em;
+    }
+    .title-mrn {
+        font-size: 0.9em;
+    }
+    .circle-eira {
+        height: 30px;
+        width: 30px;
+    }
+    .circle-devorah {
+        height: 30px;
+        width: 30px;
+    }
+}
+@media (min-width: 360px) and (max-width: 598px) {
+    .hojapost {
+        margin-right: 3%;
+    }
+    .navbar {
+        margin: 0%;
+    }
+    footer {
+        margin: 0%;
+    }
+}

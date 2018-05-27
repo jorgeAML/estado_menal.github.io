@@ -1,0 +1,98 @@
+/*portrait*/
+/*iphone 6*/
+@media (min-width: 375px) and (max-width: 667px) {
+    .hojapost {
+        margin-right: 5%;
+        
+    }
+    .title-principal-x4 {
+        font-size: 1.5em;
+    }
+    .title-principal {
+        font-size: 1.5em;
+    }
+    .parafo-prin {
+        font-size: 1.0em;
+    }
+    .circle-eira {
+        height: 40px;
+        width: 40px;
+    }
+    .title-mrn {
+        font-size: 0.9em;
+    }
+    .circle-devorah {
+        height: 30px;
+        width: 30px;
+        margin-top: -10px;
+    }
+    .circle {
+        display: column;
+        margin-left: 25px;
+    }
+    .fc1 {
+        margin-left: 75px;
+    }
+    .fc3 {
+        margin-left: 85px;
+    }
+    .fc4 {
+        margin-left: 45px;
+    }
+    .containerflags {
+        display: column;
+    }
+    .routerline {
+        display: column;
+        flex-flow: column wrap;
+    }
+    .li-est {
+		margin-left: 5%;
+		color: #414a4c;
+		font-family: 'Kalam', cursive;
+		font-size: 0.8em;
+		display: block;
+		
+    }
+    .circle-jorge {
+        height: 30px;
+        width: 30px; 
+        margin-top: -5px;
+    }
+    .p-circle {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .padfix img {
+        align-items: center;
+        justify-content: center;
+        margin-left: 95px;
+    }
+}
+/*iphone 5 */
+@media (min-width: 320px) and (max-width: 568px) {
+    .hojapost {
+        margin-right: 5%;
+    }
+    .title-principal-x4 {
+        font-size: 1.4em;
+    }
+    .title-principal {
+        font-size: 1.3em;
+    }
+    .parafo-prin {
+        font-size: 1.0em;
+    }
+    .title-mrn {
+        font-size: 0.9em;
+    }
+    .circle-eira {
+        height: 40px;
+        width: 40px;
+    }
+    .circle-devorah {
+        height: 30px;
+        width: 30px;
+        margin-top: -10px;
+    }
+}

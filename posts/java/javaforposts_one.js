@@ -1,31 +1,45 @@
 //java posts
 $(document).ready(function () {
-	$("<ul/>", {
-		"appendTo": "nav",
-		"class": "onlynav",
-		html: "<li><img></li><li><a/></li><li><a/></li><li><a/></li><li><a/></li>",
+	$("<div/>", {
+		"appendTo": ".nav",
+		"class": "navbar",
+		"html": "<div/><div/><nav><div/><div/><div/></nav>",
 	});
-	$(".onlynav").find("img").eq(0).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/logonav.jpg",
-		"class": "imgnav",
+	$(".navbar").find("nav").eq(0).attr({
+		"class": "navbar_items",
 	});
-	$(".onlynav").find("a").eq(0).html("Página principal").attr({
-		href: "http://www.medicinaresources.com/",
-		title: "volver a medicinaresources",
+	$(".navbar").find("div").eq(1).html("<i class='material-icons'>&#xE5D2;</i>").attr({
+		"class": "navbar_link navbar_link-toogle",
 	});
-	$(".onlynav").find("a").eq(1).html("Github").attr({
-		href: "https://github.com/jorgeAML",
-		title: "ver repositorios en Github",
+	$(".navbar").find("div").eq(0).html("<a href='https://jorgeaml.github.io/medicinaresourcesblog.github.io/'>MedicinaResources - blog</a>").attr({
+		"class": "navbar_link navbar_link-brand",
 	});
-	$(".onlynav").find("a").eq(2).html("MR noticias").attr({
-		href: "#",
-		title: "Noticias",
+	$(".navbar").find("div").eq(2).html("<a href='https://github.com/jorgeAML'>Github</a>").attr({
+		"class": "navbar_link",
 	});
-	$(".onlynav").find("a").eq(3).html("Acerca de nosotros").attr({
-		href: "#",
-		title: "conoce un poco más de MedicinaResources",
+	$(".navbar").find("div").eq(3).html("<a href='mrnoticias/mrnoticias.html'>MR noticias</a>").attr({
+		"class": "navbar_link",
+	});
+	$(".navbar").find("div").eq(4).html("<a href='#'>Acerca de nosotros</a>").attr({
+		"class": "navbar_link",
 	});
 
+	/*
+	FUCTION RESPONSIVE NAV 
+	*/
+
+	$(".navbar_link-toogle").click(function(){
+		$(".navbar_items").slideToggle( 800 );
+	})
+	$(".navbar_items").click(function() {
+		console.log('show this shit');
+	});
+	$(".navbar a").mouseenter(function(){
+		$(this).addClass("navbar-h", "slow");
+	});
+	$(".navbar a").mouseleave(function(){
+		$(this).removeClass("navbar-h", "slow");
+	});
 	//POSTS
 
 	$("<div/>", {
@@ -101,8 +115,12 @@ $(document).ready(function () {
 		html: "Devorah Aller de Personal Growth, motivación.",
 	});
 	//footer
-	$("<p/>", {
+	$("<div/>", {
 		"appendTo": "footer",
-		html: "MedicinaResources &copy 2018",
+		"class": "foot-div",
+		html: "<div/><div/><div/>", 
 	});
+	$(".foot-div").find("div").eq(0).html("MedicinaResources &copy 2018");
+	$(".foot-div").find("div").eq(1).html("Guatemala - Santiago");
+	$(".foot-div").find("div").eq(2).html("San Petersburgo - Rusia");
 });
