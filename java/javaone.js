@@ -4,7 +4,7 @@ $(document).ready(function () {
 		"appendTo": ".nav",
 		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/header.jpg",		
 	});
-		$("<div/>", {
+	$("<div/>", {
 		"appendTo": ".nav",
 		"class": "navbar",
 		"html": "<div/><div/><nav><div/><div/><div/></nav>",
@@ -51,7 +51,7 @@ $(document).ready(function () {
 	});
 	$("<div/>", {
 		"appendTo": ".column",
-		"class": "notpri",
+		"class": "notpri notpri-h",
 		html: "<a/>",
 	});
 	$(".notpri").find("a").eq(0).attr({
@@ -111,9 +111,9 @@ $(document).ready(function () {
 	/*$(".notpri").mouseenter(function() {
 		$(this).fadeIn(750).addClass(".notpri_hover");
 	});*/
-	$(".noticias1").mouseenter(function( event ) {
+	/*$(".noticias1").mouseenter(function( event ) {
 		$(this).addClass(".notpri_hover");
-	});
+	});*/
 
 
 	//noticias 2
@@ -228,6 +228,26 @@ $(document).ready(function () {
 		html: "<div/><div/><div/>", 
 	});
 	$(".foot-div").find("div").eq(0).html("MedicinaResources &copy 2018");
-	$(".foot-div").find("div").eq(1).html("Santiago - Guatemala");
-	$(".foot-div").find("div").eq(2).html("Sant Petersburgo - Rusia");
+	$(".foot-div").find("div").eq(1).html("Guatemala - Santiago");
+	$(".foot-div").find("div").eq(2).html("San Petersburgo - Rusia");
+
+	//$(".notpri").hide(1000);
+	$(".notpri").mouseenter(function(){
+		$(this).addClass("notpri-s", function(){
+			$("notpri-s").fadeIn("slow");
+		});
+		return false;
+	});
+	$(".notpri").mouseleave(function(){
+		$(this).removeClass("notpri-s", "slow");
+	});
+
+
+	$(".navbar a").mouseenter(function(){
+		$(this).addClass("navbar-h", "slow");
+	});
+	$(".navbar a").mouseleave(function(){
+		$(this).removeClass("navbar-h", "slow");
+	});
 });
+//agregar a la linea 54 notpri-h
