@@ -33,93 +33,175 @@
 	.mobile-column--1of4 { flex: 0 0 25%; }
 }
 /*css style posts*/
+/*css for medicinaresources blog*/
 body {
-	min-height: 100%;
 	background-color: #ebe9e9;
 	margin: 0;
-	font-size: 100%;
 }
+/*
+FOOTER BEGIN
+*/
 footer {
-	background: #201830;
+	/*background: #201830;*/
+	background-image: -webkit-linear-gradient(to right, #fbcf9c, #201830);
+	background-image: 	-moz-linear-gradient(to right, #fbcf9c, #201830);
+	background-image: 		-o-linear-gradient(to right, #fbcf9c, #201830);
+	background-image: 			linear-gradient(to right, #fbcf9c, #201830);
 	margin: 0;
 	padding: 0;
-	position: relative;
-	border-top: 2px solid #99aab5;
-	height: 50px;
 }
-footer span {
+.foot-div {
 	color: #F5F5DC;
-	text-align: left;
-	font-family: 'Pacifico', cursive;
-	margin-top: 5%; 
-	margin-left: 13%;
-	font-size: 1.2em;
-}
-nav {
-	margin: 0;
-	padding: 0;
-	background: #201830;
-	overflow: hidden;
-	margin-top: 0px;
-	box-shadow: 0px 5px 5px -4px #2c2f33;
-	border-bottom: 2px solid #99aab5;
-	position: relative;
-}
- ul {
-	list-style: none;
 	text-align: center;
-	overflow: hidden;
+	font-family: 'Bungee', cursive;
+	font-size: 0.9em;
+	display: flex;
+	justify-content: space-around;
+	align-content: stretch;
 }
-.onlynav li {
-	display: inline-block;
-	margin: 0 -4px;
-	padding: 5px 0;
+@media only screen and (max-width: 768px) {
+	.foot-div {
+		display: column;
+		flex-wrap: wrap;
+		font-size: 0.9rem;
+	}
 }
-.onlynav li a {
-	padding: 5px 70px;
-	font-family: 'Libre Franklin', sans-serif;
+.foot-div div:hover {
+	-webkit-box-shadow: 0px 62px 114px -46px rgba(158,55,159);
+		-moz-box-shadow: 0px 62px 114px -46px rgba(158,55,159);
+			box-shadow: 0px 62px 114px -46px rgba(158,55,159);
+}
+/*
+FOOTER RESPONSIVE
+*/
+
+nav img {
+	width: 100%;
+	object-fit: cover;
+}
+/*
+NAVBAR RESPONSIVE -- BEGIN
+*/
+
+.navbar {
+	order: 2;
+	display: flex;
+	background-image: -webkit-linear-gradient(to left, #fbcf9c, #201830);
+	background-image: 	-moz-linear-gradient(to left, #fbcf9c, #201830);
+	background-image: 		-o-linear-gradient(to left, #fbcf9c, #201830);
+	background-image: 			linear-gradient(to left, #fbcf9c, #201830);
+	padding: 10px;
+	font-family: 'Bungee', cursive;
 	color: #F5F5DC;
+	border-bottom: 2px solid #f7f7f7;
+	box-shadow: 0px 1px 1px 1px #999999;
+	text-align: center;
+}
+.navbar_items {
+	display: flex;
+}
+.navbar a {
 	text-decoration: none;
-	/*text-transform: uppercase;
-	font-weight: bold;*/
-	display: block;
-	border-radius: 5px;
+	color: white;
 }
-.onlynav li a:hover {
-	color: 	#fff;
-	/*background-color: 	#493267;*/
-	/*box-shadow: 0px 2px 25px -4px #e86af0;*/
-	border-bottom: 1px solid #99aab5;
+.navbar-h {
+	border-top: 2px solid #fbcf9c;
+} 
+.navbar a:active {
+	transform: scale(0.9);
 }
-.onlynav li a:active {
-	color: #fff;
+/*
+MEDIA QUERY 
+*/
+@media only screen and (min-width: 768px) {
+	.navbar_link-toogle {
+		display: none;
+	}
+	.navbar_link {
+	padding-right: 50px;
+	padding-left: 50px;
+	}
+	.navbar {
+		margin-top: 0px;
+		justify-content: center;
+	}
 }
-ul li img {
-	width: 40px;
-	height: 40px;
-	border-radius: 20px;
-	background-size: 40px;
-	position: absolute;
-	margin-top: -25px;
+@media only screen and (max-width: 768px) {
+	.navbar, 
+	.navbar_items {
+		flex-direction: column;
+		font-size: 0.9em;
+	}
+	.navbar_items {
+		display: none;
+	}
+	.navbar_ToggleShow {
+		display: flex;
+	}
+	.navbar_link-toogle {
+		align-self: flex-end;
+		display: initial;
+		position: absolute;
+		cursor: pointer;
+	}
+	.navbar_link {
+	padding-right: 8px;
+	}
+	.navbar {
+		margin-top: 0px;
+	}
 }
 
+/*
+NAVBAR RESPONSIVE -- END
+*/
+
+/*POST*/
 .hojapost {
 	background-color: #ffffff;
 	margin-top: 3%;
 	margin-bottom: 4%;
-	margin-right: 10%;
-	margin-left: 10%;
+
 	border-radius: 2px;
 	border: 1px solid #dbdcff;
-	box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
+	box-shadow: 0px 1.2px 3.5px #b2abb5;
+	/*box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
 -webkit-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
--moz-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);
+-moz-box-shadow: 0px 3px 148px -26px rgba(184,159,159,0.75);*/
+}
+@media only screen and (min-width: 1024px) {
+    .hojapost {
+        margin-right: 10%;
+        margin-left: 10%;
+	}
+	.circle {
+		border-radius: 150px;
+		width: 150px;
+		height: 150px;
+		margin-left: 7.5%;
+	}
+	.routerline {
+		display: -webkit-inline-box;
+		text-align: center;
+		margin-left: 10%;
+	
+	}
+	.padfix {
+		padding: 2.5%;
+	}
+	.li-est {
+		margin-left: 10%;
+		margin-right: 10%;
+		color: #414a4c;
+		font-family: 'Kalam', cursive;
+		font-size: 1.2em;
+		display: block;
+		
+	}
 }
 .circle-parrafo {
-	color: #0392cf;
-	font-family: 'Playfair Display', serif;
-	font-weight: bold;
-	font-size: 0.9rem;
+	color: 	#afafaf;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 	text-align: center;
 }
 .title-principal-x4 {
@@ -153,9 +235,9 @@ ul li img {
 }
 
 .linkpost1 a {
-	color: #5a2260;
-	text-decoration: none;
-	font-weight: bold;
+	color: #a92a56;
+	text-decoration: underline;
+	
 }
 .linkpost1 a:hover {
 	color: #fdb31d;
@@ -200,8 +282,8 @@ ul li img {
 	position: relative;
 }
 .title-mrn {
+	color: #a92a56;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
-	color: 	#afafaf;
 	margin-left: 16%;
 	margin-top: 3.7%;
 	font-size: 1.2em;
@@ -214,11 +296,6 @@ ul li img {
 	position: relative;
 	display: inline-block;
 	text-align: center;
-	border: 2px solid #f4f2da;
-	border-radius: 150px;
-	width: 150px;
-	height: 150px;
-	margin-left: 7.5%;
 }
 .p-circle {
 	position: relative;
@@ -226,7 +303,6 @@ ul li img {
 	font-size: 20px;
 	border-radius: 100px;
 	padding: 5px;
-	/*margin-top: -200px;*/
 	color: #9f977f;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	border: 2px solid #9f977f;
@@ -249,26 +325,11 @@ ul li img {
 	/*border: 2px solid #f4f2da;
 	padding: 2px;*/
 }
-.routerline {
-	display: -webkit-inline-box;
-	text-align: center;
-	margin-left: 10%;
 
-}
 .flag {
 	width: 150px;
 	height: 100px;
 	border-radius: 5px;
 }
-.padfix {
-	padding: 2.5%;
-}
-.li-est {
-	margin-left: 10%;
-	margin-right: 10%;
-	color: #414a4c;
-	font-family: 'Kalam', cursive;
-	font-size: 1.2em;
-	display: block;
-	
-}
+
+
