@@ -75,7 +75,7 @@ $(document).ready(function () {
 	});
 	$("<img>", {
 		"appendTo": ".np1",
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/IMG_5992.PNG",
+		"src": "imagenes/IMG_5992.PNG"
 	});
 	$("<p/>", {
 		"appendTo": ".np2",
@@ -138,7 +138,7 @@ $(document).ready(function () {
 	});
 	$("<img>", {
 		"appendTo": ".window-link-n2",
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/focus.jpg",
+		"src": "imagenes/focus.jpg",
 	});
 	var newMed = "MedicinaResources noticias";
 	$("<p/>", {
@@ -187,7 +187,7 @@ $(document).ready(function () {
 	});
 	$("<img>", {
 		"appendTo": ".window-link-n3",
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/ads.jpg",
+		"src": "imagenes/ads.jpg",
 	});
 	$("<p/>", {
 		"appendTo": "window-link-n3",
