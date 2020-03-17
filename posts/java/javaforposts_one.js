@@ -67,7 +67,7 @@ $(document).ready(function () {
 	$("<img>", {
 		"appendTo": ".hojapost",
 		"class": "imgpost1",
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/focus.jpg",
+		"src": "imagenes/focus.jpg",
 	});
 	$("<h1/>", {
 		"appendTo": ".hojapost",
