@@ -67,7 +67,7 @@ $(document).ready(function () {
 	$("<img>", {
 		"appendTo": ".hojapost",
 		"class": "imgpost1",
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/estadisticasuno.png",	
+		"src": "imagenes/estadisticasuno.png",	
 	});
 	$("<h1/>", {
 		"appendTo": ".hojapost",
@@ -204,7 +204,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags").find("img").eq(1).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/click.png",
+		"src": "imagenes/click.png",
 		//class.
 	});
 	$(".containerflags").find("p").eq(1).html("13,027 clicks").attr({
@@ -214,7 +214,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags").find("img").eq(2).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/blank-page.png",
+		"src": "imagenes/blank-page.png",
 		//class.
 	});
 	$(".containerflags").find("p").eq(2).html("+ 119,421 de impresiones en la web").attr({
@@ -223,7 +223,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags").find("img").eq(3).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/optimization.png",
+		"src": "imagenes/optimization.png",
 		//class.
 	});
 	$(".containerflags").find("p").eq(3).html("#7.5 - posición en la web").attr({
@@ -261,7 +261,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags2").find("img").eq(1).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/click.png",
+		"src": "imagenes/click.png",
 		//class.
 	});
 	$(".containerflags2").find("p").eq(1).html("2,221 clicks").attr({
@@ -271,7 +271,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags2").find("img").eq(2).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/blank-page.png",
+		"src": "imagenes/blank-page.png",
 		//class.
 	});
 	$(".containerflags2").find("p").eq(2).html("+ 24,411 de impresiones en la web").attr({
@@ -281,7 +281,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags2").find("img").eq(3).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/optimization.png",
+		"src": "imagenes/optimization.png",
 		//class.
 	});
 	$(".containerflags2").find("p").eq(3).html("#7.9 - posición en la web").attr({
@@ -319,7 +319,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags3").find("img").eq(1).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/click.png",
+		"src": "imagenes/click.png",
 		//class.
 	});
 	$(".containerflags3").find("p").eq(1).html("1,754 clicks").attr({
@@ -329,7 +329,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags3").find("img").eq(2).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/blank-page.png",
+		"src": "imagenes/blank-page.png",
 		//class.
 	});
 	$(".containerflags3").find("p").eq(2).html("+ 21,407 de impresiones en la web").attr({
@@ -339,7 +339,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags3").find("img").eq(3).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/optimization.png",
+		"src": "imagenes/optimization.png",
 		//class.
 	});
 	$(".containerflags3").find("p").eq(3).html("#7.9 - posición en la web").attr({
@@ -376,7 +376,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags4").find("img").eq(1).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/click.png",
+		"src": "imagenes/click.png",
 		//class.
 	});
 	$(".containerflags4").find("p").eq(1).html("1,420 clicks").attr({
@@ -386,7 +386,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags4").find("img").eq(2).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/blank-page.png",
+		"src": "imagenes/blank-page.png",
 		//class.
 	});
 	$(".containerflags4").find("p").eq(2).html("+ 16,850 de impresiones en la web").attr({
@@ -396,7 +396,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags4").find("img").eq(3).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/optimization.png",
+		"src": "imagenes/optimization.png",
 		//class.
 	});
 	$(".containerflags4").find("p").eq(3).html("#8.5 - posición en la web").attr({
@@ -432,7 +432,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags5").find("img").eq(1).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/click.png",
+		"src": "imagenes/click.png",
 		//class.
 	});
 	$(".containerflags5").find("p").eq(1).html("1,333 clicks").attr({
@@ -442,7 +442,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags5").find("img").eq(2).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/blank-page.png",
+		"src": "imagenes/blank-page.png",
 		//class.
 	});
 	$(".containerflags5").find("p").eq(2).html("+ 30,624 de impresiones en la web").attr({
@@ -452,7 +452,7 @@ $(document).ready(function () {
 		"class": "padfix",
 	});
 	$(".containerflags5").find("img").eq(3).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/optimization.png",
+		"src": "imagenes/optimization.png",
 		//class.
 	});
 	$(".containerflags5").find("p").eq(3).html("#12.4 - posición en la web").attr({
