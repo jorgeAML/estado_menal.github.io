@@ -63,7 +63,7 @@ $(document).ready(function() {
 		html: "<img><h2/><hr><p/><a><button/></a>",
 	});
 	$(".a1").find("img").eq(0).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/estadisticasuno.png",
+		"src": "imagenes/estadisticasuno.png",
 		"class": "imga1",
 	});
 	$(".a1").find("hr").eq(0).attr({
@@ -91,7 +91,7 @@ $(document).ready(function() {
 		html: "<img><h2/><hr><p/><a><button/></a>",
 	});
 	$(".a2").find("img").eq(0).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/focus.jpg",
+		"src": "imagenes/focus.jpg",
 		"class": "imga1",
 	});
 	$(".a2").find("hr").eq(0).attr({
@@ -120,7 +120,7 @@ $(document).ready(function() {
 		html: "<img><h2/><hr><p/><a><button/></a>",
 	});
 	$(".a3").find("img").eq(0).attr({
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/ads.jpg",
+		"src": "imagenes/ads.jpg",
 		"class": "imga1",
 	});
 	$(".a3").find("hr").eq(0).attr({
