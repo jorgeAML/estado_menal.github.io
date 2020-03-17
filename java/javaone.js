@@ -75,7 +75,7 @@ $(document).ready(function () {
 	});
 	$("<img>", {
 		"appendTo": ".np1",
-		"src": "imagenes/IMG_5992.PNG"
+		"src": "imagenes/IMG_5992.png"
 	});
 	$("<p/>", {
 		"appendTo": ".np2",
