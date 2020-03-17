@@ -2,7 +2,7 @@
 $(document).ready(function () {
 	$("<img>", {
 		"appendTo": ".nav",
-		"src": "https://s3-us-west-2.amazonaws.com/www.medicinaresources.com/blog+medicinaresources/imagenes/header.jpg",		
+		"src": "imagenes/header.jpg"		
 	});
 	$("<div/>", {
 		"appendTo": ".nav",
